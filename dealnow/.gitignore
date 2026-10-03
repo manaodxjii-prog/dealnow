@@ -1,0 +1,11 @@
+node_modules/
+.next/
+dist/
+lib/
+.env
+.env.*
+!.env.example
+*.local
+serviceAccount*.json
+.firebase/
+firebase-debug.log

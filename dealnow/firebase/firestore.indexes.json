@@ -1,0 +1,39 @@
+{
+  "indexes": [
+    { "collectionGroup": "products", "queryScope": "COLLECTION", "fields": [
+      {"fieldPath":"storeId","order":"ASCENDING"},{"fieldPath":"active","order":"ASCENDING"},{"fieldPath":"createdAt","order":"DESCENDING"}]},
+    { "collectionGroup": "products", "queryScope": "COLLECTION", "fields": [
+      {"fieldPath":"storeId","order":"ASCENDING"},{"fieldPath":"categoryId","order":"ASCENDING"},{"fieldPath":"active","order":"ASCENDING"}]},
+    { "collectionGroup": "products", "queryScope": "COLLECTION", "fields": [
+      {"fieldPath":"storeId","order":"ASCENDING"},{"fieldPath":"soldCount","order":"DESCENDING"}]},
+    { "collectionGroup": "products", "queryScope": "COLLECTION", "fields": [
+      {"fieldPath":"storeId","order":"ASCENDING"},{"fieldPath":"searchTokens","arrayConfig":"CONTAINS"},{"fieldPath":"active","order":"ASCENDING"}]},
+    { "collectionGroup": "orders", "queryScope": "COLLECTION", "fields": [
+      {"fieldPath":"storeId","order":"ASCENDING"},{"fieldPath":"status","order":"ASCENDING"},{"fieldPath":"createdAt","order":"DESCENDING"}]},
+    { "collectionGroup": "orders", "queryScope": "COLLECTION", "fields": [
+      {"fieldPath":"storeId","order":"ASCENDING"},{"fieldPath":"createdAt","order":"DESCENDING"}]},
+    { "collectionGroup": "orders", "queryScope": "COLLECTION", "fields": [
+      {"fieldPath":"buyerUid","order":"ASCENDING"},{"fieldPath":"createdAt","order":"DESCENDING"}]},
+    { "collectionGroup": "orders", "queryScope": "COLLECTION", "fields": [
+      {"fieldPath":"status","order":"ASCENDING"},{"fieldPath":"createdAt","order":"DESCENDING"}]},
+    { "collectionGroup": "orderItems", "queryScope": "COLLECTION", "fields": [
+      {"fieldPath":"orderId","order":"ASCENDING"},{"fieldPath":"storeId","order":"ASCENDING"}]},
+    { "collectionGroup": "customers", "queryScope": "COLLECTION", "fields": [
+      {"fieldPath":"storeId","order":"ASCENDING"},{"fieldPath":"totalSpent","order":"DESCENDING"}]},
+    { "collectionGroup": "inventory", "queryScope": "COLLECTION", "fields": [
+      {"fieldPath":"storeId","order":"ASCENDING"},{"fieldPath":"onHand","order":"ASCENDING"}]},
+    { "collectionGroup": "payments", "queryScope": "COLLECTION", "fields": [
+      {"fieldPath":"storeId","order":"ASCENDING"},{"fieldPath":"status","order":"ASCENDING"},{"fieldPath":"createdAt","order":"DESCENDING"}]},
+    { "collectionGroup": "slips", "queryScope": "COLLECTION", "fields": [
+      {"fieldPath":"storeId","order":"ASCENDING"},{"fieldPath":"status","order":"ASCENDING"},{"fieldPath":"createdAt","order":"DESCENDING"}]},
+    { "collectionGroup": "shipments", "queryScope": "COLLECTION", "fields": [
+      {"fieldPath":"storeId","order":"ASCENDING"},{"fieldPath":"status","order":"ASCENDING"},{"fieldPath":"lastUpdate","order":"DESCENDING"}]},
+    { "collectionGroup": "trackingEvents", "queryScope": "COLLECTION", "fields": [
+      {"fieldPath":"shipmentId","order":"ASCENDING"},{"fieldPath":"occurredAt","order":"DESCENDING"}]},
+    { "collectionGroup": "notifications", "queryScope": "COLLECTION", "fields": [
+      {"fieldPath":"recipientUid","order":"ASCENDING"},{"fieldPath":"read","order":"ASCENDING"},{"fieldPath":"createdAt","order":"DESCENDING"}]},
+    { "collectionGroup": "adminLogs", "queryScope": "COLLECTION", "fields": [
+      {"fieldPath":"storeId","order":"ASCENDING"},{"fieldPath":"at","order":"DESCENDING"}]}
+  ],
+  "fieldOverrides": []
+}

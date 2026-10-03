@@ -1,0 +1,13 @@
+{
+  "name": "dealnow",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": ["apps/*", "packages/*", "functions"],
+  "scripts": {
+    "dev": "npm run dev -w apps/web",
+    "build:shared": "npm run build -w packages/shared",
+    "emulators": "firebase emulators:start --config firebase/firebase.json",
+    "test:rules": "firebase emulators:exec --config firebase/firebase.json \"npm run test -w functions\""
+  },
+  "engines": { "node": ">=20" }
+}

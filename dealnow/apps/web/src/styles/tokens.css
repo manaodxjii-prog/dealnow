@@ -1,0 +1,27 @@
+/* DEALNOW design tokens — single source for web app. Mobile first. */
+:root {
+  --dn-brand-500: #F0441C;   /* orange-red: primary actions, key numbers */
+  --dn-brand-600: #D43812;   /* pressed / hover */
+  --dn-brand-100: #FDE6DF;   /* tint backgrounds */
+  --dn-ink-900: #16130F;     /* text, dark surfaces (warm black) */
+  --dn-ink-700: #3A3631;
+  --dn-ink-500: #6B655E;     /* secondary text */
+  --dn-ink-200: #E4E0DA;     /* borders */
+  --dn-ink-50:  #F7F5F2;     /* app background */
+  --dn-white: #FFFFFF;
+  --dn-success: #14804A; --dn-warning: #B26A00; --dn-danger: #C42B1C; --dn-info: #1F5FBF;
+
+  --dn-font-display: 'Prompt', 'Noto Sans Thai', system-ui, sans-serif;
+  --dn-font-body: 'IBM Plex Sans Thai', 'Noto Sans Thai', system-ui, sans-serif;
+
+  --dn-radius-sm: 6px; --dn-radius-md: 10px; --dn-radius-lg: 16px;
+  --dn-tap: 44px;            /* minimum touch target */
+  --dn-shadow-pop: 0 8px 24px rgba(22, 19, 15, .14);
+}
+@media (prefers-color-scheme: dark) {
+  .dn-admin { --dn-ink-50: #1D1A16; --dn-white: #26221D; --dn-ink-900: #F7F5F2; --dn-ink-200: #3A3631; --dn-ink-500: #A39C93; }
+}
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+:focus-visible { outline: 3px solid var(--dn-brand-500); outline-offset: 2px; }
+body { font-family: var(--dn-font-body); background: var(--dn-ink-50); color: var(--dn-ink-900); line-height: 1.6; }
+h1,h2,h3 { font-family: var(--dn-font-display); font-weight: 600; line-height: 1.25; }
